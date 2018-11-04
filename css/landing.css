@@ -12,7 +12,7 @@ body::before {
     background-repeat: no-repeat;
 }
 
-nav {
+header {
     position: absolute;
 }
 

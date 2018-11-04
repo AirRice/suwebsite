@@ -19,7 +19,7 @@ p {
     font-size: 1.2em;
 }
 
-nav {
+header {
     width: 100%;
     padding: 20px;
     background-color: #383838;
@@ -27,9 +27,45 @@ nav {
     box-sizing: border-box;
 }
 
-nav h1 {
+header h1 {
     font-size: 2em;
+    display: inline-block;
 }
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+#menu-toggle {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+}
+
+#menu-toggle::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+    top: 20px;
+}
+
+#menu-toggle::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+    top: 20px;
+}
+
+
 
 main {
     background-color: #ECEBF3; /* alt: C7D6D5 */

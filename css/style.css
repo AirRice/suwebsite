@@ -12,7 +12,10 @@ body {
     height: 100%;
     background-color: #fff;
     color: #383838;
-    position: relative;
+}
+
+body.active {
+    position: fixed;
 }
 
 p {
@@ -26,6 +29,10 @@ header {
     background-color: #383838;
     color: #fff;
     box-sizing: border-box;
+}
+
+header.active {
+    position: fixed;
 }
 
 header h1 {
@@ -84,7 +91,7 @@ header h1 {
     width: 100%;
     height: calc(100vh - 72px);
     background-color: #383838;
-    position: absolute;
+    position: fixed;
     top: 72px;
     left: 0;
     text-align: center;

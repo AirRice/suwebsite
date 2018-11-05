@@ -48,6 +48,7 @@ header h1 {
     position: relative;
     border-radius: 4px;
     transition: transform .3s, opacity .2s linear;
+    -webkit-transition: transform .3s, opacity .2s linear;
 }
 
 

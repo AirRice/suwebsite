@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Johoo Lee; Jakub Zajac">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/main.js" async></script>
+
+        <title>SU Building Unofficial Guide - Contact</title>
+    </head>
+    <body>
+        <header>
+            <h1>SU Building Guide</h1>
+            <div id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="menu-items">
+                <a href="index.html">Home</a>
+                <a href="spaces.html">Useful spaces</a>
+                <a href="food.html">Food and drink</a>
+                <a href="typical-day.html">Typical day</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </header>
+        <main>
+            <section>
+                <h3>Contact us</h3>
+                <form name="myform" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
+
+					<!-- the following line must be included as it is required by the cgi script -->
+					<!-- ****************** 
+						 Replace your_email_address below with the relevant part of your sheffield email address.
+						 It must be your sheffield email address.
+						 ******************
+					-->
+					<input type="hidden" name="recipient" value="jlee106@sheffield.ac.uk">
+
+					<!-- full details at: http://www.scriptarchive.com/formmail.html -->
+					<input type="hidden" name="subject" value="Test Form" />
+
+					<p>
+						<label for="from">Your name:</label>
+						<input type="text" name="from" id="from"
+						maxlength="40" size="20" placeholder="type your name..."  required>
+					</p>
+
+					<p>
+						<label for="email">Your e-mail:</label>
+						<input type="email" name="email" id="email" placeholder="type your email..."
+						maxlength="40" size="20" required>
+					</p>
+					<p>
+						<textarea rows="6" cols="100" placeholder="Type your message here." maxlength="1024" name="mailtext" id="mailtext" required></textarea>
+					</p>
+					<!-- must have one button of type 'submit' in order to send the form to the cgi script -->
+					<p>
+						<input type="submit" name="submit" id="submit" value="Submit">
+						<input type="reset">
+					</p>
+
+				</form>
+            </section>
+			<section>
+                <h3>Accessibility Statement</h3>
+                <p>The two creators of this website have committed to making this website as accessible as possible by implementing features such as alternate text for all non-decorative images, high contrast used in the design of the website and keyboard control. If you feel that there are any inconveniences to using the website, or if you have any suggestions on how we can improve it, please contact us using the form above.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                Authors:<br>
+                Johoo Lee - jlee106@sheffield.ac.uk<br>
+                Jakub Zajac - jzajac1@sheffield.ac.uk<br>
+                See Contact page for more details
+            </p>
+        </footer>
+    </body>
+</html>
